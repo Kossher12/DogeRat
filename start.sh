@@ -45,7 +45,7 @@ fi
 if ! command -v wget &> /dev/null
 then
     echo "wget not found. Installing..."
-   sudo apt install -y wget || { echo "Failed to install wget" ; exit 1; }
+   sudo apt install wget -y || { echo "Failed to install wget" ; exit 1; }
 else
     echo "wget already installed"
 fi
