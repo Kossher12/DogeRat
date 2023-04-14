@@ -38,14 +38,14 @@ apt update && apt upgrade -y
 if ! command -v node &> /dev/null
 then
     echo "Node.js LTS not found. Installing..."
-    pkg install nodejs-lts || { echo "Failed to install Node.js LTS" ; exit 1; }
+    sudo apt install nodejs-lts || { echo "Failed to install Node.js LTS" ; exit 1; }
 else
     echo "Node.js LTS already installed"
 fi
 if ! command -v wget &> /dev/null
 then
     echo "wget not found. Installing..."
-    apt install -y wget || { echo "Failed to install wget" ; exit 1; }
+   sudo apt install -y wget || { echo "Failed to install wget" ; exit 1; }
 else
     echo "wget already installed"
 fi
